@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import ComponentsScreen from './src/screens/ComponentScreen';
 import ListScreen from './src/screens/ListScreen';
 import HomeScreen from './src/screens/HomeScreen';
-import { NavigationContainer, createAppContainer, createStackNavigator } from '@react-navigation/native';
+import { NavigationContainer, createAppContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // export default function App() {
@@ -32,8 +32,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="ListScreen" component={ListScreen} />
+      <Stack.Screen name="ComponentScreen" component={ComponentsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
