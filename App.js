@@ -9,6 +9,7 @@ import { NavigationContainer, createAppContainer } from '@react-navigation/nativ
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CounterScreen from './src/screens/CounterScreen';
 import SquareScreen from './src/screens/SquareScreen';
+import TextScreen from './src/screens/TextScreen';
 
 // export default function App() {
 //   return (
@@ -43,6 +44,7 @@ function App() {
         <Stack.Screen name="ColorScreen" component={ColorScreen} />
         <Stack.Screen name="CounterScreen" component={CounterScreen} />
         <Stack.Screen name="SquareScreen" component={SquareScreen} />
+        <Stack.Screen name="TextScreen" component={TextScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
